@@ -40,11 +40,13 @@ struct SpeedView: View {
             }
             
             // INPUT
+          
+            TextField("Enter a Distance in Meters", text: $viewModel.providedDistance)
+                .textFieldStyle(.roundedBorder)
+            
             TextField("Enter a Speed in seconds", text: $viewModel.providedTime)
                 .textFieldStyle(.roundedBorder)
             
-            TextField("Enter a Distance in Meters", text: $viewModel.providedDistance)
-                .textFieldStyle(.roundedBorder)
             
             HStack {
                 Text("History")

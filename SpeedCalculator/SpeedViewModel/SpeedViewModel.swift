@@ -28,7 +28,7 @@ class SpeedViewModel {
         }
         
         guard let providedTime = Double(providedTime) else {
-            recoveryMessage = "Please provide a numeric value for the exponent."
+            recoveryMessage = "Please provide a numeric value for the time."
             
             return nil
         }

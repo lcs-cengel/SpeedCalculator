@@ -18,9 +18,11 @@ struct SpeedItemView: View {
         HStack(spacing: 0) {
             Text("\(calculatedResult.distance.formatted(.number.precision(.significantDigits(1...3)))) Meters")
             
-            Text(" = \(calculatedResult.time.formatted(.number.precision(.significantDigits(1...3)))) Seconds")
+            Text(" / \(calculatedResult.time.formatted(.number.precision(.significantDigits(1...3)))) Seconds")
+            
+            Text(" = \(calculatedResult.speed.formatted(.number.precision(.significantDigits(1...3)))) m/s")
         }
-        .font(.largeTitle)
+        .font(.subheadline)
         
     }
     
