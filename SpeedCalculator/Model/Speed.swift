@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Speed {
+struct Speed: Identifiable {
+    var id = UUID()
     var distance: Double
     var time: Double
     
