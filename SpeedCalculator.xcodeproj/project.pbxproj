@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		70C345862D76399E0063FC37 /* SpeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C345832D76399E0063FC37 /* SpeedView.swift */; };
+		70C345872D76399E0063FC37 /* SpeedCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C345842D76399E0063FC37 /* SpeedCalculatorApp.swift */; };
+		70C345882D76399E0063FC37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C345802D76399E0063FC37 /* Preview Assets.xcassets */; };
+		70C345892D76399E0063FC37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C345822D76399E0063FC37 /* Assets.xcassets */; };
+		70C3458B2D7639FC0063FC37 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C3458A2D7639ED0063FC37 /* Speed.swift */; };
+		70C3458D2D763A500063FC37 /* SpeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C3458C2D763A430063FC37 /* SpeedViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		70C345692D7639700063FC37 /* SpeedCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70C345802D76399E0063FC37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		70C345822D76399E0063FC37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70C345832D76399E0063FC37 /* SpeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedView.swift; sourceTree = "<group>"; };
+		70C345842D76399E0063FC37 /* SpeedCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedCalculatorApp.swift; sourceTree = "<group>"; };
+		70C3458A2D7639ED0063FC37 /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
+		70C3458C2D763A430063FC37 /* SpeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		70C3456B2D7639700063FC37 /* SpeedCalculator */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SpeedCalculator;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		70C345662D7639700063FC37 /* Frameworks */ = {
@@ -32,7 +39,7 @@
 		70C345602D7639700063FC37 = {
 			isa = PBXGroup;
 			children = (
-				70C3456B2D7639700063FC37 /* SpeedCalculator */,
+				70C345852D76399E0063FC37 /* SpeedCalculator */,
 				70C3456A2D7639700063FC37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,51 @@
 				70C345692D7639700063FC37 /* SpeedCalculator.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		70C3457D2D76399E0063FC37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70C3458A2D7639ED0063FC37 /* Speed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		70C3457E2D76399E0063FC37 /* SpeedViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				70C3458C2D763A430063FC37 /* SpeedViewModel.swift */,
+			);
+			path = SpeedViewModel;
+			sourceTree = "<group>";
+		};
+		70C3457F2D76399E0063FC37 /* SpeedView */ = {
+			isa = PBXGroup;
+			children = (
+				70C345832D76399E0063FC37 /* SpeedView.swift */,
+			);
+			path = SpeedView;
+			sourceTree = "<group>";
+		};
+		70C345812D76399E0063FC37 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				70C345802D76399E0063FC37 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		70C345852D76399E0063FC37 /* SpeedCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				70C345842D76399E0063FC37 /* SpeedCalculatorApp.swift */,
+				70C3457D2D76399E0063FC37 /* Model */,
+				70C3457E2D76399E0063FC37 /* SpeedViewModel */,
+				70C3457F2D76399E0063FC37 /* SpeedView */,
+				70C345812D76399E0063FC37 /* Preview Content */,
+				70C345822D76399E0063FC37 /* Assets.xcassets */,
+			);
+			path = SpeedCalculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +111,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				70C3456B2D7639700063FC37 /* SpeedCalculator */,
 			);
 			name = SpeedCalculator;
 			packageProductDependencies = (
@@ -109,6 +158,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C345882D76399E0063FC37 /* Preview Assets.xcassets in Resources */,
+				70C345892D76399E0063FC37 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C3458D2D763A500063FC37 /* SpeedViewModel.swift in Sources */,
+				70C3458B2D7639FC0063FC37 /* Speed.swift in Sources */,
+				70C345862D76399E0063FC37 /* SpeedView.swift in Sources */,
+				70C345872D76399E0063FC37 /* SpeedCalculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

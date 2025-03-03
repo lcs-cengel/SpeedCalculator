@@ -11,7 +11,7 @@ import SwiftUI
 struct SpeedCalculatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SpeedView()
         }
     }
 }
