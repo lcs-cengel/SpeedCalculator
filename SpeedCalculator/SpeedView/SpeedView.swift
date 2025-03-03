@@ -17,7 +17,7 @@ struct SpeedView: View {
                 
                 VStack(spacing: 0) {
                     
-                    FahrenheitToCelsiusConversionItemView(conversionResult: conversionResult)
+                    SpeedItemView(calculatedResult: calculatedResult)
                         .padding(.bottom, 30)
                     
                     // Add a button so that the result can be saved
@@ -40,7 +40,10 @@ struct SpeedView: View {
             }
             
             // INPUT
-            TextField("Enter a temperature in Fahrenheit", text: $viewModel.providedFarenheight)
+            TextField("Enter a Speed in seconds", text: $viewModel.providedTime)
+                .textFieldStyle(.roundedBorder)
+            
+            TextField("Enter a Distance in Meters", text: $viewModel.providedDistance)
                 .textFieldStyle(.roundedBorder)
             
             HStack {
@@ -55,7 +58,7 @@ struct SpeedView: View {
             // Iterate over the list of results
             List(viewModel.resultHistory) { currentResult in
                 
-                FahrenheitToCelsiusConversionItemView(conversionResult: currentResult)
+               SpeedItemView(calculatedResult: currentResult)
                 
             }
             .listStyle(.plain)
